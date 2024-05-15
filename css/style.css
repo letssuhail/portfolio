@@ -1,0 +1,218 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --blue: #0a192f;
+    --lightwhite: #ccd6f6;
+    --darkwhite: #fff;
+    --aqua: #64ffda;
+    --lightgray: #24354e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--blue);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+
+    color: var(--aqua);
+}
+
+h5,
+h6 {
+
+    color: var(--darkwhite);
+}
+
+p {
+    color: var(--lightwhite);
+}
+
+/* navbar style start */
+
+.nav_fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav_bg {
+    background-color: var(--lightgray);
+    transition: all .2s ease-in;
+}
+
+/* navbar style end */
+
+/* home style start */
+.header {
+    /* background-image: url("bgimg.jpg") , rgba(255, 0, 0, 0.3); */
+    /* background: url('bgimg.jpg'), rgba(0, 0, 0, 0.5); */
+    /* background: rgba(0, 0, 0, 0.5) url(bgimg.jpg); */
+    /* text-decoration: none;
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    min-height: 78vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.social_icons a {
+    text-decoration: none;
+}
+
+.social_icons a i {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 30px;
+    padding: 0 5px;
+}
+
+.social_icons a i:hover {
+    color: grey;
+}
+
+.social_text {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+.profile_pic img {
+    max-height: 370px;
+    width: auto;
+    /* padding: 2px; */
+    border: 3px solid white;
+}
+
+/* home style end */
+
+
+/* about style start */
+.about img {
+    max-height: 350px;
+    width: auto;
+}
+
+/* about style end */
+
+
+/* services style start  */
+.card-body img {
+    max-height: 100px;
+    width: auto;
+}
+
+/* services style end  */
+
+
+/* skills style start */
+.progress {
+    height: 10px;
+    background-color: var(--blue);
+    border: 1px solid wheat;
+}
+
+.progress-bar {
+    background-color: var(--lightwhite);
+}
+
+.head_perc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* skills style end */
+
+
+/* portfolio style start  */
+.scale:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.5);
+}
+
+/* fortfolio style end */
+
+
+/* slider style start  */
+.slider-width {
+    max-width: 1380px;
+    margin: auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-height: 60vh;
+}
+
+/* slider style end  */
+
+
+/* contact style start   */
+.con_img {
+    height: 200px;
+    width: auto;
+}
+
+.form-label {
+    color: var(--lightwhite);
+}
+
+/* contact style end*/
+
+
+/* footer style start  */
+.footer {
+    background-color: #0a192f;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
+/* footer style end  */
+
+/* RESPONSIVE --------------------------------------- */
+
+@media (max-width: 992px) {
+    .main_text {
+        padding: 50px 0;
+    }
+
+    .hero_content {
+        padding: 30px 0;
+    }
+
+    .profile_pic img {
+        margin-top: 20px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+  
+/* services style start  */
+.card{
+    margin-top: 30px;
+}
+
+/* services style end  */
+
+}
